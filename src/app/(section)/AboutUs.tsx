@@ -38,7 +38,7 @@ const AboutUs = () => {
         </h1>
         <Button
           variant="outline"
-          className="group mt-8 items-center gap-[1.19rem] border-primary font-semibold uppercase text-white hover:bg-primary md:mt-[5.6rem] lg:z-40"
+          className="group mt-8 items-center gap-[1.19rem] border-primary font-semibold uppercase text-white hover:bg-primary md:mt-[5.6rem] lg:z-40 py-7"
         >
           <Link
             href="/table-booking"
@@ -87,10 +87,10 @@ const AboutUs = () => {
                     <ModelBox
                       src={item.ModelUrl}
                       width="100%"
-                      height="300px"
+                      height="500px"
                       Top="20px"
-                      cameraOrbit="0deg 70deg 0deg 3m"
-                      fieldOfView="35deg"
+                      cameraOrbit="0deg 50deg 0deg 3m"
+                      fieldOfView="25deg"
                       cameraTarget="0m 0m 0m"
                     />
                   </CarouselItem>

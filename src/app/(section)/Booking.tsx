@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const Booking = ({}) => {
+const Booking = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center">
       <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-4 bg-[#131313] md:flex-row">
@@ -30,7 +30,7 @@ const Booking = ({}) => {
           </p>
           <Button
             variant="outline"
-            className="group w-fit items-center gap-[1.19rem] border-primary bg-transparent font-semibold uppercase text-white hover:bg-primary"
+            className="group w-fit items-center gap-[1.19rem] border-primary bg-transparent font-semibold uppercase text-white hover:bg-primary py-7"
           >
             <Link
               href="/table-booking"

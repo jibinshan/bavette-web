@@ -166,7 +166,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
           }}
         />
         <div className="absolute left-1/2 top-0 translate-x-16 transform sm:translate-x-24 md:translate-x-28">
-          <div className="relative flex size-24 items-center justify-center">
+          {/* <div className="relative flex size-24 items-center justify-center">
             <Icons.badge className="absolute z-10 h-full w-full text-primary" />
             <p className="relative z-20 flex items-center gap-2 font-playfair text-3xl text-[#282828]">
               $
@@ -174,7 +174,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 {slides[selectedIndex]?.price}
               </span>
             </p>
-          </div>
+          </div> */}
         </div>
         <h1 className="absolute inset-0 left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-[50%] transform items-center justify-center font-playfair text-[7rem] text-[#131313] md:text-[10rem]">
           Special

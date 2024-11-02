@@ -11,6 +11,7 @@ import Image from "next/image";
 import { type FC } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { BookCheck, Dock, Gift, Phone, ShieldQuestion } from "lucide-react";
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -28,38 +29,38 @@ const Sidebar: FC<SidebarProps> = ({ children }) => {
           <SheetDescription className="flex w-full flex-col items-start justify-start pt-6">
             <Button
               variant="link"
-              className={cn("p-0 uppercase text-accent text-white")}
+              className={cn("w-full flex justify-start p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800")}
               asChild
             >
-              <Link href="/menu">Menu</Link>
+              <Link href="/menu" className="flex gap-2 py-6"><Dock /> <span>Menu</span></Link>
             </Button>
             <Button
               asChild
               variant="link"
-              className="p-0 uppercase text-accent text-white"
+              className="w-full flex justify-start p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
             >
-              <Link href="/about-us">About</Link>
+              <Link href="/about-us" className="flex gap-2 py-6"><ShieldQuestion /> <span>About</span> </Link>
             </Button>
             <Button
               variant="link"
-              className="p-0 uppercase text-accent text-white"
+              className="w-full flex justify-start p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
               asChild
             >
-              <Link href="/contact">Contact</Link>
-            </Button>
-            <Button
-              asChild
-              variant="link"
-              className="p-0 uppercase text-accent text-white"
-            >
-              <Link href="/table-booking">Booking</Link>
+              <Link href="/contact" className="flex gap-2 py-6"><Phone /> <span>Contact</span></Link>
             </Button>
             <Button
               asChild
               variant="link"
-              className="p-0 uppercase text-accent text-white"
+              className="w-full flex justify-start px-1 p-0 uppercase text-accent text-white border-b-[1px] border-b-gray-800"
             >
-              <Link href="/gift-voucher">Gift Voucher</Link>
+              <Link href="/table-booking" className="flex gap-2 py-6"><BookCheck /> <span>Booking</span> </Link>
+            </Button>
+            <Button
+              asChild
+              variant="link"
+              className="w-full flex justify-start p-0 uppercase text-accent text-white"
+            >
+              <Link href="/gift-voucher" className="flex gap-2 py-6" ><Gift /> <span>Gift Voucher</span></Link>
             </Button>
           </SheetDescription>
         </SheetHeader>

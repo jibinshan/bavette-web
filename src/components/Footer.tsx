@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const Footer = ({}) => {
+const Footer = ({ }) => {
   return (
     <footer className="z-50 flex h-full w-full items-center justify-center bg-[#131313] px-2 py-[8.75rem]">
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-10 lg:flex-row">
@@ -122,12 +122,12 @@ const Footer = ({}) => {
                 height={68}
                 alt="logo"
               />
-              <p className="text-[#64615C]">© 2024 bavetteliverpool</p>
+              <p className="text-[#64615C]">© 2024 bavetteliverpool <Link href="https://foodo.ai">Powered By Foodo</Link> </p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 
