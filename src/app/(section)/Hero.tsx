@@ -12,6 +12,7 @@ const Hero = ({}) => {
             autoPlay
             loop
             muted
+            playsInline
           ></video>
         </div>
         <div className="z-50 flex h-full w-full max-w-[1300px] items-center justify-center">

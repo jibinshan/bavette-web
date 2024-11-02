@@ -63,8 +63,8 @@ const AboutUs = () => {
                       height="500px"
                       Top="0px"
                       Bottom="10px"
-                      cameraOrbit="0deg 75deg 0deg 5m"
-                      fieldOfView="45deg"
+                      cameraOrbit="0deg 50deg 0deg 5m"
+                      fieldOfView="35deg"
                       cameraTarget="0m 0m 0m"
                     />
                   </CarouselItem>

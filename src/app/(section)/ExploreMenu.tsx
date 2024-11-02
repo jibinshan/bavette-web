@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-const ExploreMenu = ({}) => {
+const ExploreMenu = ({ }) => {
   return (
     <section className="relative flex h-full w-full items-center justify-center bg-[#131313]">
       <div className="flex h-full w-full max-w-[1300px] flex-col items-center justify-center gap-4 py-44">
@@ -51,7 +51,7 @@ const ExploreMenu = ({}) => {
         </p>
         <Button
           variant="outline"
-          className="group items-center gap-[1.19rem] border-primary bg-transparent font-semibold uppercase text-white hover:bg-primary"
+          className="group items-center gap-[1.19rem] border-primary bg-transparent font-semibold uppercase text-white hover:bg-primary py-7"
           asChild
         >
           <Link href="/menu">
